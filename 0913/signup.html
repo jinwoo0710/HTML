@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+​
+<div class="container">
+  <h2>회원 정보 보기</h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="아이디">아이디:</label>
+      <input type="text" class="form-control" id="아이디" placeholder="아이디를 작성하시오" name="아이디">
+    </div>
+    <div class="form-group">
+      <label for="패스워드">Password:</label>
+      <input type="text" class="form-control" id="패스워드" placeholder="패스워드를 입력하시오" name="패스워드">
+    </div>
+    <div class="form-group">
+      <label for="이름">이름:</label>
+      <input type="text" class="form-control" id="이름" placeholder="이름" name="이름">
+    </div>
+    <div class="form-group">
+      <label for="전화번호">전화번호:</label>
+      <input type="text" class="form-control" id="전화번호" placeholder="전화번호를 입력하시오" name="전화번호">
+    </div>
+    <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      직업
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">학생</a>
+    </div>
+    </div>
+    성별:
+    <div class="form-check disabled">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optradio" disabled>남자
+        <br>
+        <input type="radio" class="form-check-input" name="optradio" disabled>여자
+      </label>
+    </div>
+    취미:
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> 독서
+        <br>
+        <input class="form-check-input" type="checkbox" name="remember"> 게임
+        <br>
+        <input class="form-check-input" type="checkbox" name="remember"> 영화 감상
+        <br>
+        <input class="form-check-input" type="checkbox" name="remember"> 음악 감상
+        <br>
+        <input class="form-check-input" type="checkbox" name="remember"> 축구
+      </label>
+    </div>
+    <textarea cols="50" rows="10">자기를 소개하는 글을 쓰세요</textarea>
+    <br><br>
+    <button type="submit" class="btn btn-primary">등록하기</button>
+    <button type="submit" class="btn btn-primary">취소하기</button>
