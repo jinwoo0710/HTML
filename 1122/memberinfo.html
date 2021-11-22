@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>방문자 카운터 만들기</title>
+    <script language="javascript">
+        function drop(n){
+            self.moveBy(0,-900)
+            for(i = n; i > 0; i--){
+                self.moveBy(0,3)
+            }
+        }
+
+        function getCookie(name){
+            var cname = name + "=";
+            var dc = document.cookie;
+            if(dc.length > 0){
+                begin = dc.indexOf(cname);
+                    if(begin != -1){
+                        begin += cname.lenght;
+                        end = dc.indexOf(";", begin);
+                        if(end == -1) end = dc.length;
+                        return unescape(dc.substring(begin, end));
+                    }
+            }
+            return null;
+        }
+        function setCookie (name, value, expires){
+        document. cookie = name + "=" +escape (value) + "; path=/" + 
+        ((expires == null) ? "" : "; exprires=" + expires.toGMTString()) ;
+        }
+        function delCookie(){
+            setCookie("yourname", "")
+            setCookie("yourpassword", "")
+            setCookie("yourid", "")
+            setCookie("NotOpen", "")
+            location.reload()
+        }
+
+        function getvalue(element){
+            var value = getCookie(element.name);
+            if(value != null) element.value = vlaue;
+        }
+
+        function setvalue(element){
+            setCookie(element.nam, element.vlaue, exp);
+        }
+
+        function reset_Cnt(){
+            var myday = new date()
+            var Cookiecounter = 0
+            setCookie("Cookiecounter", Cookiecounter, myday)
+            location.reload
+        }
+        
+        var exp = new date()
+        exp.setTime(exp.getTime() + (1000 * 60 * 60 * 24 * 31));
+
+        if(getCookie("Notopen") != "checked"){
+            window.open('nes.html')
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

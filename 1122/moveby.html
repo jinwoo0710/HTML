@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body onload="window.resizeTo(500, 300)">
+    <form>
+        <hr>
+        브라우저의 크기 조정 :
+        <input type="button" value="확대" onclick="resize_by(20, 20)">
+        <input type="button" value="축소" onclick="resize_by(-20, -20)">
+        <hr>
+        브라우저의 위치 이동 :
+        <input type="button" value="상" onclick="resize_by(0, -20)">
+        <input type="button" value="하" onclick="resize_by(0, 20)">
+        <input type="button" value="좌" onclick="resize_by(-20, 0)">
+        <input type="button" value="우" onclick="resize_by(20, 0)">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>document 객체3</title>
+    <style type="text/css">
+        body{font-size:12px}
+    </style>
+    <script type="text/javascript">
+        expireDate = new Date();
+        expireDate.setMonth(expireDate.getMonth()+6);
+    </script>
+</head>
+<body>
+    <script language = "javascript">
+        if(document.cookie != ""){
+            document.write("<h3>쿠키가 있습니다.</h3>");
+            document.write("<p>쿠키의 이름은 :</p>")
+            document.write("<font color='red'>" + cookieName + "</font>");
+            document.write("<p>쿠키의 만기일은 </p>")
+            document.write("")
+        }
+    </script>
+</body>
+</html>
